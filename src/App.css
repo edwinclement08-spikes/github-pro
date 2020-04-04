@@ -11,3 +11,9 @@
   color: white;
   padding: 2rem;
 }
+
+.button {
+  padding: 1rem;
+  border: thin solid white;
+  border-radius: 3px;
+}

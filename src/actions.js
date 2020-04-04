@@ -1,7 +1,12 @@
-const TEST = 'TEST';
+const TEST_ADD = 'TEST_ADD';
+const TEST_CLR = 'TEST_CLR';
 
-function createTestAction(text) {
-  return { type: TEST, text }
+function createTestAdd(text) {
+  return { type: TEST_ADD, text };
 }
 
-export { TEST, createTestAction };
+function createTestClear() {
+  return { type: TEST_CLR };
+}
+
+export { TEST_ADD, TEST_CLR, createTestAdd, createTestClear };

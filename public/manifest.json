@@ -8,7 +8,8 @@
     "48": "icons/logo-pro.png"
   },
   "permissions": [
-    "activeTab"
+    "activeTab",
+    "storage"
   ],
   "browser_action": {
     "default_icon": "icons/logo-pro.png",
