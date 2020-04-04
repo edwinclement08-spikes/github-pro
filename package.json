@@ -8,12 +8,17 @@
     "@testing-library/user-event": "^7.1.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-redux": "^7.2.0",
     "react-scripts": "3.4.1",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
     "webext-redux": "^2.1.6"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "INLINE_RUNTIME_CHUNK=false react-scripts build",
+    "build": "react-scripts build",
+    "build-bg": "INLINE_RUNTIME_CHUNK=false npx webpack --config webpack.config.js",
+    "b": "yarn run build && yarn run build-bg",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -31,5 +36,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.11"
   }
 }

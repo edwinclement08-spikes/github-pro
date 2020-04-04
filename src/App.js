@@ -1,26 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { connect } from "react-redux";
 
-function App() {
+import { createTestAction } from "./actions";
+import "./App.css";
+
+
+const App = (props) => {
+  const buttonPress = (event) => {
+    props.createTestAction("Testing this");
+    event.stopPropagation();
+  }
+  console.log("list", typeof props.list)
+  console.log( Array.from(props.list))
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div onClick={buttonPress}>Click me</div>
+      <br />
+      <ol>
+        {props.list.map(x => <li>{x}</li>)}
+      </ol>
     </div>
   );
 }
 
-export default App;
+const mapStateToProps = state => {
+  console.log("state", state);
+  
+  return { list: [...state.list]  };
+};
+
+export default connect(mapStateToProps, { createTestAction })(App);
+// export default App;

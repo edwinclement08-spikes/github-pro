@@ -20,5 +20,8 @@
       "matches": ["*://*.github.com/*"],
       "js": ["index.js"]
     }
-  ]
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  }
 }
