@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 
-import { createTestAdd, createTestClear } from "./actions";
+import { createTestAdd, createTestClear } from "../actions";
 import "./App.css";
 
 const App = (props) => {
@@ -21,7 +21,7 @@ const App = (props) => {
       <div id="clear" className="button" onClick={clear}>Clear</div>
       <br />
       <ol>
-        {props.list.map((x,i) => <li key={i}>{x}</li>)}
+        {props.list.map((x,i) => <div key={i}>{x}</div>)}
       </ol>
     </div>
   );
@@ -32,4 +32,3 @@ const mapStateToProps = state => {
 };
 
 export default connect(mapStateToProps, { createTestAdd, createTestClear })(App);
-// export default App;

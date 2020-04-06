@@ -1,0 +1,24 @@
+#contentRoot {
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+  width: 10rem;
+  height: 20rem;
+}
+
+.App {
+  text-align: center;
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 2rem;
+}
+
+.button {
+  padding: 1rem;
+  border: thin solid white;
+  border-radius: 3px;
+}

@@ -14,6 +14,7 @@ function mainReducer(state = startState, action) {
       stateCopy.list = [...state.list, action.text];
       return stateCopy;
     case TEST_CLR:
+      if(state.list.length === 0) return state;
       stateCopy.list = [];
       return stateCopy;
     default:
