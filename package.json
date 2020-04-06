@@ -16,13 +16,11 @@
     "webext-redux": "^2.1.6"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build-ba": "react-scripts build",
     "build-bg": "INLINE_RUNTIME_CHUNK=false npx webpack --config webpack-backgroundScript.config.js",
     "build-cs": "INLINE_RUNTIME_CHUNK=false npx webpack --config webpack-contentScript.config.js",
-    "b": "yarn run build && yarn run build-bg && yarn run build-cs",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build": "yarn run build-ba && yarn run build-bg && yarn run build-cs",
+    "start": "web-ext run --source-dir ./build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -40,6 +38,7 @@
     ]
   },
   "devDependencies": {
+    "web-ext": "^4.1.0",
     "webpack-cli": "^3.3.11"
   }
 }
