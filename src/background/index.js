@@ -1,6 +1,6 @@
 import { wrapStore } from 'webext-redux';
 import { createStore } from 'redux'
-import { TEST_ADD, TEST_CLR } from '../actions';
+import { TEST_ADD, TEST_CLR } from '../actionCreators/actions';
 import { hydrateState, persistState } from './persist';
 
 const startState = {

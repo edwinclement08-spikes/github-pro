@@ -13,7 +13,9 @@
     "react-scripts": "3.4.1",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
-    "webext-redux": "^2.1.6"
+    "svg-to-react-cli": "^1.5.0",
+    "webext-redux": "^2.1.6",
+    "yarn": "^1.22.4"
   },
   "scripts": {
     "build-ba": "react-scripts build",

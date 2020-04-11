@@ -1,8 +1,9 @@
 import React from "react";
 import { connect } from "react-redux";
 
-import { createTestAdd, createTestClear } from "./actions";
+import { createTestAdd, createTestClear } from "./actionCreators/actions";
 import "./App.css";
+import { PullRequest } from "./components/PullRequest";
 
 const App = (props) => {
   const buttonPress = (event) => {
@@ -16,19 +17,20 @@ const App = (props) => {
   }
 
   return (
-    <div className="App">
+    <div className="">
       <div id="add" className="button" onClick={buttonPress}>Add</div>
+      <PullRequest />
       <div id="clear" className="button" onClick={clear}>Clear</div>
       <br />
       <ol>
-        {props.list.map((x,i) => <li key={i}>{x}</li>)}
+        {props.list.map((x, i) => <li key={i}>{x}</li>)}
       </ol>
     </div>
   );
 }
 
 const mapStateToProps = state => {
-  return { list: [...state.list]  };
+  return { list: [...state.list] };
 };
 
 export default connect(mapStateToProps, { createTestAdd, createTestClear })(App);

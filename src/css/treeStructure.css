@@ -1,0 +1,13 @@
+.pullRequest {
+    white-space: nowrap;
+}
+.pullRequest svg {
+    height:20px;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+.pullRequest a {
+    font-weight:bold;
+    color:inherit;
+    text-decoration: none;
+}
