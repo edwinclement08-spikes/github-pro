@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 
 import { createTestAdd, createTestClear } from "./actionCreators/actions";
 import "./App.css";
-import { PullRequest } from "./components/PullRequest";
+import { SideBar } from "./containers/SideBar";
 
 const App = (props) => {
   const buttonPress = (event) => {
@@ -17,15 +17,17 @@ const App = (props) => {
   }
 
   return (
-    <div className="">
+    <>
+    <div className="App">
       <div id="add" className="button" onClick={buttonPress}>Add</div>
-      <PullRequest />
       <div id="clear" className="button" onClick={clear}>Clear</div>
       <br />
       <ol>
         {props.list.map((x, i) => <li key={i}>{x}</li>)}
       </ol>
     </div>
+    <SideBar />
+    </>
   );
 }
 

@@ -3,9 +3,9 @@ import PullRequestIcon from "../utils/PullRequestIcon";
 import "../css/treeStructure.css";
 export const PullRequest = (props) => {
     return (
-        <div className="pullRequest">
+        <div className="rowContainer">
             <PullRequestIcon />
-            <a href="#"> F 172049229 user review listing body desktop</a>
+            <a href="#"> {props.name}</a>
         </div>
     );
 }
