@@ -1,7 +1,7 @@
 .rowContainer {
     white-space: nowrap;
 }
-.rowContainer svg {
+.rowContainer img {
     height:20px;
     vertical-align: middle;
     margin-right: 4px;

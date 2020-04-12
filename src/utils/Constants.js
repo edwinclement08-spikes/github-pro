@@ -1,1 +1,0 @@
-export const PULL_REQUEST_ICON_URL = "https://visualpharm.com/assets/817/Pull%20Request-595b40b85ba036ed117da8b8.svg";
