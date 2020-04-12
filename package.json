@@ -6,6 +6,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "eslint": "^6.8.0",
     "jquery": "^3.4.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -13,7 +14,8 @@
     "react-scripts": "3.4.1",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
-    "webext-redux": "^2.1.6"
+    "webext-redux": "^2.1.6",
+    "yarn": "^1.22.4"
   },
   "scripts": {
     "build-ba": "react-scripts build",
@@ -38,6 +40,7 @@
     ]
   },
   "devDependencies": {
+    "prettier": "2.0.4",
     "web-ext": "^4.1.0",
     "webpack-cli": "^3.3.11"
   }

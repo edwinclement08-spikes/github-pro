@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 
-import { createTestAdd, createTestClear } from "../actions";
+import { createTestAdd, createTestClear } from "../actionCreators/actions";
 import "./App.css";
 
 const App = (props) => {
