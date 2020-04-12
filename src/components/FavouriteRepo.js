@@ -1,6 +1,6 @@
 import React from "react";
 import BookmarkIcon from "../assets/image/icon/bookmark.svg";
-import "../css/treeStructure.css";
+import "../css/treestructure.css";
 export const FavouriteRepo = (props) => {
   return (
     <>

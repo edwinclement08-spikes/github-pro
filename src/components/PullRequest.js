@@ -1,6 +1,6 @@
 import React from "react";
 import PullRequestIcon from "../assets/image/icon/pullrequest.svg";
-import "../css/treeStructure.css";
+import "../css/treestructure.css";
 export const PullRequest = (props) => {
     return (
         <div className="rowContainer">

@@ -21,7 +21,6 @@ const App = (props) => {
     pullRequests : ["added tree", "something", "another pull request"],
   }
   return (
-    <>
     <div className="">
       <div id="add" className="button" onClick={buttonPress}>Add</div>
       <div id="clear" className="button" onClick={clear}>Clear</div>
@@ -31,7 +30,6 @@ const App = (props) => {
         {props.list.map((x, i) => <li key={i}>{x}</li>)}
       </ol>
     </div>
-    </>
   );
 }
 
